@@ -22,5 +22,7 @@ jobs:
       working-directory: src
     - name: Pack
       run: dotnet pack --no-restore
+      working-directory: src
     - name: Test
       run: dotnet test --no-build --verbosity normal
+      working-directory: src
